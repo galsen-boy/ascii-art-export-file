@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stylize</title>
+</head>
+<body>
+  <header>
+    <nav class="navigation">
+      <h1>ASCII ART WEB EXPORTFILE</h1>
+      <ul class="menu">
+        <li><a href="http://localhost:8080/">Home</a></li>
+        <li><a href="https://learn.zone01dakar.sn/git/root/public/src/branch/master/subjects/ascii-art-web/export-file">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <br><br>
+  <div class="container">
+    <div class="right-block">
+      <div class="form-items">
+        <form  action="ascii-art" method="POST">
+          <textarea name="input" required placeholder="type something"></textarea>
+          <label for="select"><h2>Banner</h2></label>
+          <select name="banner">
+            <option value="standard">standard</option>
+            <option value="shadow">shadow</option>
+            <option value="thinkertoy">thinkertoy</option>
+          </select><br><br><br>
+          <button  name="sub" value="sub" class="button" type="submit" value="submit">submit</button>&nbsp &nbsp<button class="button" type="reset" name="reset" value="Clear">Clear</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="left-block">
+      <h2>See the ouput here</h2>
+      <div class="result">
+    
+                   <pre>{{ . }}</pre>
+    
+             </div>
+
+
+    </div>
+
+  </div>
+  
+  <form id="formatselection" action="/down" method="POST">
+    <div>
+    <p>Select file type</p>
+    <input type="radio" id="txt" name="fileformat" value="txt" checked>
+    <label for="txt">txt</label><br>
+    <input type="radio" id="doc" name="fileformat" value="doc">
+    <label for="doc">doc</label><br><br>
+    
+    <button name="telecharge" class="button" value="telecharge">Download</button>
+    
+ </div>
+</form>
+
+</body>
+  <!-- <footer>
+    <p>Author: MOURIDE ZONE 01 COPYRIGHT<br>
+  </footer> -->
+</html>
